@@ -40,22 +40,17 @@ const Navbar = () => {
     const menuRef = useRef(null)
     const [isHam, setIsHam] = useState(false)
 
-
-
-    var w=0;
-    var h = 0;
-    window.onload=function(){
-        w = window.innerWidth;
-    }
-    window.onresize = function(){ 
-        if(window.innerWidth != w){
-                location.reload();
-        }
-    }
-
-    const windowWidth = window.innerWidth
-
     useEffect(()=>{
+        (function () {
+            var width = window.innerWidth;
+        
+            window.addEventListener('resize', function () {
+               if (window.innerWidth !== width) {
+                   window.location.reload();
+               }
+            });
+        })();
+        const windowWidth = window.innerWidth
         if(windowWidth <= 750) {
             setIsHam(false)
         } else {
@@ -73,12 +68,12 @@ const Navbar = () => {
                     <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
                 </div>
             }
-            <AnimatePresence mode="wait">
+            {/* <AnimatePresence mode="wait">
                 {isActive && <Menu />}
-            </AnimatePresence>
+            </AnimatePresence> */}
 
-            {isHam &&
-                <div className="flex gap-5 lg:gap-10 text-base lg:text-xl font-semibold text-white">
+            {isHam ?
+                (<div className="flex gap-5 lg:gap-10 text-base lg:text-xl font-semibold text-white">
                     {navItems.map((data,i) => {
                         return (
                             <div key={i}>
@@ -88,7 +83,11 @@ const Navbar = () => {
                             </div>
                         )
                     })}
-                </div>
+                </div>) : (
+                    <AnimatePresence mode="wait">
+                        {isActive && <Menu />}
+                    </AnimatePresence>
+                )
             }
         </nav>
     );
