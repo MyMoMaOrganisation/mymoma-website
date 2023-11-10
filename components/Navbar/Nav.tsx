@@ -40,13 +40,22 @@ const Navbar = () => {
     const menuRef = useRef(null)
     const [isHam, setIsHam] = useState(false)
 
-    useLayoutEffect(()=>{
-        window.addEventListener("resize", () => {
-            window.location.reload()
-        })
 
-        const windowWidth = window.innerWidth
 
+    var w=0;
+    var h = 0;
+    window.onload=function(){
+        w = window.innerWidth;
+    }
+    window.onresize = function(){ 
+        if(window.innerWidth != w){
+                location.reload();
+        }
+    }
+
+    const windowWidth = window.innerWidth
+
+    useEffect(()=>{
         if(windowWidth <= 750) {
             setIsHam(false)
         } else {
