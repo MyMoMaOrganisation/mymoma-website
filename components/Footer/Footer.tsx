@@ -32,29 +32,33 @@ const navItems = [
 const contact = [
     {
         icon : TbBrandInstagram,
-        value : "@my.mo.ma"
+        value : "@my.mo.ma",
+        href : "https://www.instagram.com/my.mo.ma/",
     },
     {
         icon : TbBrandLinkedin,
-        value : "MyMoMa- My Moment of Makeover"
+        value : "MyMoMa- My Moment of Makeover",
+        href : "https://www.linkedin.com/company/mymoma/",
     },
     {
         icon : TbBrandGmail,
-        value : "meghal@mymoma.in"
+        value : "meghal@mymoma.in",
+        href : "#footer"
     },
     {
         icon : TbPhone,
-        value : "+91 9810196086"
+        value : "+91 9810196086",
+        href: "#footer"
     },
 ]
 
 const Footer = () => {
     return (
-        <section className={poppins.className + "h-screen lg:h-[50vh] flex lg:flex-row flex-col items-center bg-bgpurple justify-evenly px-5 lg:px-20 py-16"}>
+        <section id="footer" className={poppins.className + " footer h-screen lg:h-[50vh] flex lg:flex-row flex-col items-center bg-bgpurple justify-evenly px-5 lg:px-20 py-16"}>
             <div className="lg:w-1/3">
                 <Image src={BigLogo} alt="logo" />
             </div>
-            <div className="flex md:flex-row flex-col lg:justify-around gap-16 md:gap-0 lg:w-2/3">
+            <div className="flex md:flex-row flex-col justify-between lg:justify-around gap-16 lg:w-2/3">
                 <div className="flex justify-between md:justify-start md:flex-col gap-2 md:gap-5">
                     {navItems.map((data,i)=>{
                         return (
@@ -69,9 +73,9 @@ const Footer = () => {
                         return (
                             <div key={i} className="flex text-bgwhite text-3xl items-center gap-2">
                                 <data.icon />
-                                <Link href={""}>
+                                {data.href === "#footer" ? <h1 className="text-bgwhite text-[18px]">{data.value}</h1> : (<Link href={data.href} target={ data.href === "#footer" ? "" : "_blank"}>
                                     <h1 className="text-bgwhite text-[18px]">{data.value}</h1>
-                                </Link>
+                                </Link>)}
                             </div>
                         )
                     })}

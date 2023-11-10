@@ -17,9 +17,9 @@ const Openings = () => {
     ]
 
     return (
-        <div className={poppins.className + " bg-bgwhite px-40 py-20 min-h-screen"}>
+        <div className={poppins.className + " bg-bgwhite px-5 xl:px-40 py-20 min-h-screen"}>
             <div className=" bg-gradient-to-t from-[#653A8D] to-[#EDB4FE] min-h-screen p-2 rounded-3xl">
-                <div className="bg-[#F4EBFE] w-full min-h-screen rounded-3xl px-40 py-40">
+                <div className="bg-[#F4EBFE] w-full min-h-screen rounded-3xl lg:px-20 px-5 2xl:px-40 py-20">
                     <div className="flex flex-col items-center pb-20">
                         <h1 className="text-[47px] font-black text-center">Current Openings</h1>
                         <div className='h-[3px] w-[20%] bg-[#653A8D]'></div>
@@ -34,8 +34,8 @@ const Openings = () => {
                                     <h1 className="text-[29px] font-semibold pb-10">
                                         {data.positions}
                                     </h1>
-                                    <div className="flex gap-20 justify-between">
-                                        <div className="w-4/12 flex flex-col gap-10">
+                                    <div className="flex flex-col lg:flex-row gap-20 justify-between">
+                                        <div className="lg:w-4/12 flex flex-col gap-10">
                                             <h1 className="text-[18px]">
                                                 {data.description}
                                             </h1>
@@ -45,9 +45,9 @@ const Openings = () => {
                                                 </p>
                                             </Link>
                                         </div>
-                                        <div className="flex flex-col gap-5 w-5/12">
+                                        <div className="flex flex-col gap-5 lg:w-5/12">
                                             <h1 className="text-[#7556FB] text-[18px] font-semibold">Key Roles</h1>
-                                            <ul className="text-[18px] list-disc">
+                                            <ul className="text-[18px] list-disc pl-5">
                                                 {data.roles.map((job, i)=>{
                                                     return (
                                                         <li key={i}>{job}</li>
@@ -55,7 +55,7 @@ const Openings = () => {
                                                 })}
                                             </ul>
                                             <h1 className="text-[#7556FB] text-[18px] font-semibold pt-10">Requirements</h1>
-                                            <ul className="text-[18px] list-disc">
+                                            <ul className="text-[18px] list-disc pl-5">
                                                 {data.requirements.map((job, i)=>{
                                                     return (
                                                         <li key={i}>{job}</li>
@@ -70,9 +70,9 @@ const Openings = () => {
                     </div>
                 </div>
             </div>
-            <div className="py-20">
-                <h1 className="text-[47px] font-black">Have Something More?</h1>
-                <div className='h-[3px] w-[20%] bg-bgpurple'></div>
+            <div className="py-20 flex flex-col">
+                <h1 className="text-[47px] font-black pb-5">Have Something More?</h1>
+                <div className='h-[3px] w-[50%] bg-bgpurple'></div>
                 <p className="text-[18px] pt-20">
                     Have  questions? Don’t fit into above JDs but still passionate to work with us?
                     <br/>

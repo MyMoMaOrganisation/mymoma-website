@@ -26,15 +26,15 @@ const opportunities = [
 
 const Embrace = () => {
     return (
-        <div className="h-[80vh] bg-bgwhite py-20 flex flex-col justify-center items-center">
+        <div className="min-h-[80vh] bg-bgwhite py-20 flex flex-col justify-center items-center px-5">
             <div className="flex flex-col items-center">
-                <h1 className="text-[47px] font-black">Embrace Opportunities</h1>
+                <h1 className="text-[47px] font-black text-center">Embrace Opportunities</h1>
                 <p className="text-[29px] text-center pb-5">
                     with MyMoMa
                 </p>
                 <div className='h-[3px] w-[20%] bg-bgpurple'></div>
             </div>
-            <div className='grid grid-cols-2 px-80 gap-x-10 gap-y-10 pt-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:px-20 2xl:px-80 gap-x-10 gap-y-10 pt-10'>
                 {opportunities.map((opportunity, i)=>{
                     return (
                         <div key={i} className='flex items-center justify-center gap-10'>

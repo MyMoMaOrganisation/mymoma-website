@@ -4,7 +4,9 @@ import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import { menuSlide } from './anim';
 import Link from './Link';
-import Image from 'next/image';
+
+import { Poppins } from 'next/font/google';
+const poppins = Poppins({weight:["100",'200','300','400','500','600','700','800','900'],subsets:['latin']})
 
 const navItems = [
   {
@@ -12,20 +14,20 @@ const navItems = [
     href: "/",
   },
   {
-    title: "About",
-    href: "/about",
+    title: "About Us",
+    href: "/AboutUs",
   },
   {
-    title: "Work",
-    href: "/work",
+    title: "Our Projects",
+    href: "/OurProjects",
   },
   {
-    title: "Experience",
-    href: "/experience",
+    title: "Join Us",
+    href: "/JoinUs",
   },
   {
-    title: "Contact",
-    href: "/contact",
+    title: "Contact Us",
+    href: "/ContactUs",
   },
 ]
 
@@ -40,7 +42,7 @@ export default function Menu() {
       initial="initial" 
       animate="enter" 
       exit="exit" 
-      className={" h-full w-full bg-[#7556FB] fixed top-0 right-0 text-white z-10"}
+      className={poppins.className + " h-full w-full bg-bgpink fixed top-0 right-0 text-black z-10"}
       >
        <div className={" box-border h-full p-10 lg:p-20 flex flex-col justify-between"}>
             <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className="flex flex-col lg:text-[5vw] text-5xl gap-[12px] mt-5 lg:mt-[80px]">

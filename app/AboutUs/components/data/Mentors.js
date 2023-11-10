@@ -24,7 +24,7 @@ import Savyasachi from '@/app/AboutUs/Assets/Savyasachi Ganjoo.png'
 import Kavan from '@/app/AboutUs/Assets/Kavan Thakkar.png'
 
 
-const team = [
+const mentors = [
     {
         name: "Meghal Jain",
         position : "Executive Director",
@@ -171,4 +171,4 @@ const team = [
     },
 ]
 
-export default team;
+export default mentors;

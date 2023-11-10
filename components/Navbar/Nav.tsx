@@ -30,7 +30,7 @@ const navItems = [
     },
     {
       title: "Contact Us",
-      href: "/contact",
+      href: "/ContactUs",
     },
   ]
 
@@ -55,7 +55,7 @@ const Navbar = () => {
     })
 
     return (
-        <nav className=" flex justify-between items-center pr-5 lg:px-10 fixed top-0 py-3 md:py-2 z-5 bg-[#7556FB] w-screen overflow-x-hidden" ref={menuRef}>
+        <nav className=" flex justify-between items-center pr-5 lg:px-10 fixed top-0 py-3 md:py-2 z-5 bg-[#7556FB] w-screen overflow-x-hidden z-50" ref={menuRef}>
             <div className={holt.className} ref={logoRef}>
                 <Image src={logo} alt="mymoma-logo" className="lg:h-[75px] h-[60px] object-contain"/>
             </div>

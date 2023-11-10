@@ -17,17 +17,20 @@ const OurVision = () => {
                             <h1 className='text-[47px] font-black text-center lg:text-left'>Our Vision</h1>
                             <div className='h-[3px] w-[300px] bg-bgpurple'></div>
                         </div>
-                        <div className='relative'>
-                            <div className='absolute h-[130%] w-[90vw] lg:w-[50vw] left-[-10vw] lg:left-[-10vw] flex rounded-lg opacity-0 lg:opacity-100'>
+                        <div className='relative flex'>
+                            {/* <div className='absolute h-[130%] w-[90vw] lg:w-[50vw] left-[-10vw] lg:left-[-10vw] flex rounded-lg opacity-0 lg:opacity-100'>
                                 <div className='w-[10px] bg-bgpurple rounded-tl-lg rounded-bl-lg'></div>
                                 <div className='w-full bg-bgpurple/30 rounded-tr-lg rounded-br-lg'></div>
+                            </div> */}
+                            <div className='w-[10px] bg-bgpurple rounded-tl-lg rounded-bl-lg'></div>
+                            <div className='bg-bgpurple/30 px-5 w-full rounded-tr-lg rounded-br-lg'>
+                                <p className='text-[18px] py-5 lg:py-10 text-justify lg:pr-10'>
+                                <span className='font-bold italic'>Our vision is a world where every woman and member of the LGBTQIA+ community stands as a fearless entrepreneur,</span>
+                                <br /> 
+                                their unique brilliance ignited, and their dreams amplified. 
+                                We envision breaking down all barriers to success, fostering a global network of empowered individuals, and creating a landscape where diversity and innovation flourish
+                                </p>
                             </div>
-                            <p className='text-[18px] py-5 lg:py-10 text-justify pr-10'>
-                            <span className='font-bold italic'>Our vision is a world where every woman and member of the LGBTQIA+ community stands as a fearless entrepreneur,</span>
-                            <br /> 
-                            their unique brilliance ignited, and their dreams amplified. 
-                            We envision breaking down all barriers to success, fostering a global network of empowered individuals, and creating a landscape where diversity and innovation flourish
-                            </p>
                         </div>
                     </div>
                 </div>
