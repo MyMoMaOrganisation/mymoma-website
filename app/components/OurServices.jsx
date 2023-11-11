@@ -64,7 +64,7 @@ const OurServices = () => {
                             <Image alt="chart" src={chart} className="h-fit object-contain" />
                         </div>
                         <div className="w-4/12 text-[18px]">
-                            only 13% of WLGBTQIA+ entrepreneurs have the access to business resources
+                            Only 13% of WLGBTQIA+ entrepreneurs have the access to business resources
                         </div>
                     </div>
                     <div>
