@@ -54,7 +54,7 @@ const contact = [
 
 const Footer = () => {
     return (
-        <section id="footer" className={poppins.className + " footer h-screen lg:h-[50vh] flex lg:flex-row flex-col items-center bg-bgpurple justify-evenly px-5 lg:px-20 py-16"}>
+        <section id="footer" className={poppins.className + " footer minh-screen lg:min-h-[50vh] flex lg:flex-row flex-col items-center bg-bgpurple justify-evenly px-5 lg:px-20 py-16"}>
             <div className="lg:w-1/3">
                 <Image src={BigLogo} alt="logo" />
             </div>
