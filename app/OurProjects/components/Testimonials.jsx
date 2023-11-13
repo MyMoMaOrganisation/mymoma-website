@@ -44,7 +44,7 @@ const Testimonials = () => {
                 <div className='flex justify-between gap-5 lg:gap-10 overflow-x-auto pb-10 pr-20'>
                     {testimonials.map((data, i)=>{
                         return (
-                            <div key={i} className='md:h-[60vh] h-[70vh] min-w-[85vw] md:min-w-[50vw] lg:min-w-[40vw] xl:min-w-[30vw] bg-bglightpurple relative p-5 pl-10 pt-10 lg:p-20 rounded-tr-[75px] lg:rounded-tr-[150px] flex flex-col justify-between'>
+                            <div key={i} className='xl:min-h-[30vw] md:min-h-[30vw] min-h-[40vw] min-w-[85vw] md:min-w-[50vw] lg:min-w-[40vw] xl:min-w-[30vw] bg-bglightpurple relative p-5 pl-10 pt-10 lg:p-20 rounded-tr-[75px] lg:rounded-tr-[150px] flex flex-col justify-between'>
                                 <div className='absolute top-5 left-5 w-[75px] lg:w-full'>
                                     <Image src={quotes} alt='quote' className='' />
                                 </div>
