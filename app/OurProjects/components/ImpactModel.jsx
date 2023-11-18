@@ -42,16 +42,16 @@ const ImpactModel = () => {
                     <div className='h-[3px] w-[50%] bg-bgpurple'></div>
                 </div>
                 <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-10">
-                    <div className="flex flex-col gap-1 justify-center w-10/12 lg:w-7/12">
+                    <div className="flex flex-col gap-1 justify-center px-5 lg:px-0 lg:w-7/12">
                         {
                             model.map((data, i)=>{ return(
-                                <div key={i} className="flex items-center gap-5 lg:gap-20 mt-[-20px]">
+                                <div key={i} className="flex items-center gap-5 lg:gap-16 mt-[-20px]">
                                     <div className=" bg-bgwhite rounded-t-[25px]">
-                                        <div className="h-[20px] w-[48px]"></div>
-                                        <div style={{backgroundColor: data.color}} className={ " h-[12.5vh] w-[48px] rounded-t-[25px] rounded-b-[5px]"}></div>
+                                        <div className="h-[10px] w-[35px] lg:w-[48px]"></div>
+                                        <div style={{backgroundColor: data.color}} className={ " h-[12.5vh] lg:w-[48px] w-[35px] rounded-t-[25px] rounded-b-[5px]"}></div>
                                     </div>
                                     <div className="text-black">
-                                        <h1 className="lg:text-[29px] text-[18px] font-semibold">{data.heading}</h1>
+                                        <h1 className="lg:text-[29px] text-[15px] font-semibold">{data.heading}</h1>
                                         <p className="lg:text-[18px] text-[15px]">{data.content}</p>
                                     </div>
                             </div>

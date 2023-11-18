@@ -43,6 +43,12 @@ const Navbar = () => {
     useEffect(()=>{
         (function () {
             var width = window.innerWidth;
+
+            if (window.innerWidth <= 750) {
+                setIsHam(false)
+            } else {
+                setIsHam(true)
+            }
         
             window.addEventListener('resize', function () {
                 if (window.innerWidth <= 750) {

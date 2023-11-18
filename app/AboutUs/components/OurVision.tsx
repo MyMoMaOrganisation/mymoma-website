@@ -8,8 +8,8 @@ const OurVision = () => {
     return (
         <div className={poppins.className + " bg-bgwhite min-w-screen min-h-screen flex items-center justify-center gap-20 py-10 md:py-20"}>
             <div className='flex flex-col-reverse md:flex-row gap-2 lg:gap-10 xl:gap-20 justify-center items-center'>
-                <div className='md:w-fit w-12/12 flex items-center justify-center md:px-5 md:pt-0 pt-10'>
-                    <Image src={ourVision} alt='image' className='' />
+                <div className='md:w-fit w-screen flex items-center justify-center md:px-5 md:pt-0 pt-10 rounded-bl-[127px] '>
+                    <Image src={ourVision} alt='image' className='md:rounded-bl-[127px] object-fill' />
                 </div>
                 <div className='md:w-5/12 px-5'>
                     <div className='flex flex-col relative gap-10 pt-20 md:pt-40'>

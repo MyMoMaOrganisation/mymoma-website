@@ -9,6 +9,7 @@ import Entry from '../assets/services/Entry.png'
 import Diligence from '../assets/services/Diligence.png'
 import Assistance from '../assets/services/Digital Assistance.png'
 import chart from '../assets/Chart.png'
+import { IoIosArrowForward } from "react-icons/io";
 
 const services = [
     {
@@ -74,8 +75,11 @@ const OurServices = () => {
                         </p>
                     </div>
                 </div>
-                <div className='lg:w-7/12'>
-                <div className='flex justify-between gap-2 lg:gap-10 overflow-x-auto pr-20'>
+                <div className='lg:w-7/12 relative'>
+                <div className=" absolute w-[40%] mr-[-2px] lg:w-[10vw] right-0 bg-gradient-to-r from-bgpurple/0 to-bgpurple via-bgpurple/70 h-full flex items-center justify-end text-5xl">
+                    <IoIosArrowForward />
+                </div>
+                <div className='flex justify-start gap-2 lg:gap-10 overflow-x-auto pr-20 py-10'>
                     {services.map((data, i)=>{
                         return (
                             <div className="p-1 bg-gradient-to-tl from-[#653A8D] to-[#ECB4FE] rounded-[20px]">
@@ -83,7 +87,7 @@ const OurServices = () => {
                                     <div className="h-1/2">
                                         <Image src={data.image} alt="service image" className="h-[100%] object-contain" />
                                     </div>
-                                    <h1 className="lg:w-[250px] w-[100px] text-center font-semibold md:text-[29px] text-[15px]">{data.position}</h1>
+                                    <h1 className="lg:w-[250px] w-[100px] text-center font-semibold lg:text-[29px] text-[15px]">{data.position}</h1>
                                 </div>
                             </div>
                             )
