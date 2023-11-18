@@ -18,25 +18,25 @@ const impacts = [
 
 const OurImpact = () => {
     return (
-        <div className="h-fit flex flex-col lg:flex-row px-5 lg:px-20 2xl:px-40 items-center justify-center gap-20 w-full py-40">
-            <div className="lg:w-6/12">
-                <h1 className="text-[47px] font-semibold pb-5">Our Impact</h1>
-                <div className="w-[30vw] h-[3px] bg-bgpurple"></div>
-                <p className="text-[29px] italic pt-10 pb-10">
+        <div className="h-fit flex flex-col lg:flex-row lg:px-20 2xl:px-40 items-center justify-center gap-20 w-full py-10 lg:py-40 bg-bgwhite mt-[-5px]">
+            <div className="lg:w-6/12 px-5">
+                <h1 className="lg:text-[47px] text-[40px] font-semibold pb-5">Our Impact</h1>
+                <div className="w-[50%] h-[3px] bg-bgpurple"></div>
+                <p className="lg:text-[29px] text-[25px] italic pt-10 pb-10">
                     Transforming ONE WLGBTQIA+ Led Business at a Time
                 </p>
-                <div className="flex flex-col gap-10">
+                <div className="lg:flex lg:flex-col grid grid-cols-2 gap-10">
                     {impacts.map((data,i)=>{
                         return (
                             <div className="flex flex-col lg:flex-row items-center gap-5 bg-bglightpurple rounded-tl-[35px] p-5 shadow-lg shadow-black/20">
-                                <h1 className="text-[76px] font-semibold text-bgpurple">{data.quantity}</h1>
-                                <p className="lg:text-[29px] text-[18px] text-center lg:text-left">{data.description}</p>
+                                <h1 className="lg:text-[76px] text-[40px] font-semibold text-bgpurple">{data.quantity}</h1>
+                                <p className="lg:text-[29px] text-[15px] text-center lg:text-left">{data.description}</p>
                             </div>
                         )
                     })}
                 </div>
             </div>
-            <Image src={impact} alt="impact" className="lg:w-4/12 h-[50%]" />
+            <Image src={impact} alt="impact" className="lg:w-4/12 lg:h-[50%] px-5 rounded-[50px] lg:rounded-[0px] lg:rounded-br-[127px] object-contain" />
         </div>
     );
 }

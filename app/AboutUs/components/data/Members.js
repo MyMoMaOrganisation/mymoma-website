@@ -17,7 +17,7 @@ import Roohbani from '@/app/AboutUs/Assets/Roohbani Kaur.png'
 import Hashim from '@/app/AboutUs/Assets/Hashim Chirag.png'
 import Stuti from '@/app/AboutUs/Assets/Stuti Garg.png'
 import Naman from '@/app/AboutUs/Assets/Naman Sehgal.png'
-import Rishika from '@/app/AboutUs/Assets/Vishwam Bagrodia.png'
+import Rishika from '@/app/AboutUs/Assets/Rishika Tripathi.png'
 import Devvrat from '@/app/AboutUs/Assets/Vishwam Bagrodia.png'
 import Vishwam from '@/app/AboutUs/Assets/Vishwam Bagrodia.png'
 import Savyasachi from '@/app/AboutUs/Assets/Savyasachi Ganjoo.png'
@@ -74,27 +74,27 @@ const team = [
         image: Anandi,
     },
     {
-        name: "Prtyaksha Bisht",
-        position : "Market Specialist",
+        name: "Pratyaksha Bisht",
+        position : "Marketing Specialist",
         College: "Shree Ram College of Commerce (SRCC)",
         image: Pratyaksha,
     },
     {
         name: "Vidushi Shanker",
-        position : "Market Specialist",
+        position : "Marketing Specialist",
         College: "Lady Shree Ram College (LSR)",
         image: Vidushi,
     },
     {
         name: "Khushali Malhotra",
-        position : "Market & Design Specialist",
+        position : "Marketing & Design Specialist",
         College: "Gargi College",
         image: Khushali,
     },
     {
         name: "Kirtana Chadha",
         position : "Senior Associate",
-        College: "Shree Ram College of Commerce (SRCC)",
+        College: "Shaheed Sukhdev College of Business Studies (SSCBS)",
         image: Kirtana,
     },
     {

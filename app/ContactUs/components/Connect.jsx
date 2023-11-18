@@ -24,16 +24,16 @@ const Connect = () => {
     return (
         <div id='connect' className=''>
             <div className=" bg-bgpurple relative h-fit pt-5 rounded-t-[35px]">
-                <div className=" bg-bglightpurple w-full h-fit top-5 rounded-t-[35px] py-20 lg:px-40 px-5 flex flex-col gap-16">
+                <div className=" bg-bglightpurple w-full h-fit top-5 rounded-t-[35px] py-20 lg:px-40 px-5 flex flex-col gap-8 lg:gap-16">
                     <div className="">
-                        <h1 className="text-[47px] font-semibold">Ready to Connect with our vision?</h1>
-                        <p className="text-[29px] pb-5">
+                        <h1 className="lg:text-[47px] text-[40px] font-semibold">Ready to Connect with our vision?</h1>
+                        <p className="lg:text-[29px] text-[25px] pb-5">
                             Discover MyMoMa!
                         </p>
-                        <div className='h-[3px] w-[30%] bg-bgpurple'></div>
+                        <div className='h-[3px] w-[50%] bg-bgpurple'></div>
                     </div>
                     <div>
-                        <p className="text-[18px] lg:w-[37.5vw]">
+                        <p className="lg:text-[18px] text-[15px] lg:w-[37.5vw]">
                         Get involved, share the passion, and be part of our mission to ignite innovation and empower entrepreneurs. Your input matters to us. Let's connect and make a positive impact together.
                         </p>
                     </div>
@@ -44,8 +44,8 @@ const Connect = () => {
                                     <div className='text-3xl text-bgpurple'>
                                         <data.icon />
                                     </div>
-                                    {data.href === "#connect"?<h1 className='text-[18px] font-semibold'>{data.value}</h1> : (<Link href={data.href} target={data.href === "#connect" ? "" : "_blank"}>
-                                        <h1 className='text-[18px] font-semibold'>{data.value}</h1>
+                                    {data.href === "#connect"?<h1 className='lg:text-[18px] text-[15px] font-medium'>{data.value}</h1> : (<Link href={data.href} target={data.href === "#connect" ? "" : "_blank"}>
+                                        <h1 className='lg:text-[18px] text-[15px] font-medium'>{data.value}</h1>
                                     </Link>)}
                                 </div>
                             )

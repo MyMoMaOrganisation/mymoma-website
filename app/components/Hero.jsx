@@ -25,6 +25,7 @@ const Hero = () => {
         // <div>
         //     <Hero3 />
         // </div>
+        <div className="bg-bgwhite">
         <div className=" min-h-screen bg-[#EDB4FE] rounded-b-[35px]">
             <div className=" min-h-[97.5vh] w-full bg-bgpurple rounded-b-[35px] relative flex flex-col py-40 lg:py-0 lg:justify-center px-5 lg:px-20 xl:px-40 text-bgpurple">
                 <Text />
@@ -36,6 +37,7 @@ const Hero = () => {
                 </div> */}
                 <Image src={hero1} alt="hero image" className=" absolute right-0 bottom-0 rounded-b-[35px]" />
             </div>
+        </div>
         </div>
     );
 }

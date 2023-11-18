@@ -45,17 +45,19 @@ const Navbar = () => {
             var width = window.innerWidth;
         
             window.addEventListener('resize', function () {
-               if (window.innerWidth !== width) {
-                   window.location.reload();
-               }
+                if (window.innerWidth <= 750) {
+                    setIsHam(false)
+                }else {
+                    setIsHam(true)
+                }
             });
         })();
-        const windowWidth = window.innerWidth
-        if(windowWidth <= 750) {
-            setIsHam(false)
-        } else {
-            setIsHam(true)
-        }
+        // const windowWidth = window.innerWidth
+        // if(windowWidth <= 750) {
+        //     setIsHam(false)
+        // } else {
+        //     setIsHam(true)
+        // }
     })
 
     return (

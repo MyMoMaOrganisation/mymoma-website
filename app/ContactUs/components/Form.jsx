@@ -4,11 +4,11 @@ const form = () => {
     return (
         <div className="lg:px-40 px-5 py-32 flex flex-col gap-20">
             <div className="">
-                <p className="text-[29px]">
+                <p className="lg:text-[29px] text-[25px]">
                     Let's Partner
                 </p>
-                <h1 className="text-[47px] font-semibold pb-5">Your Project, Our Expertise</h1>
-                <div className='h-[3px] w-[30%] bg-bgpurple'></div>
+                <h1 className="lg:text-[47px] text-[40px] font-semibold pb-5">Your Project, Our Expertise</h1>
+                <div className='h-[3px] w-[50%] bg-bgpurple'></div>
             </div>
             <div className='flex lg:justify-end px-2'>
                 <FormComponent />

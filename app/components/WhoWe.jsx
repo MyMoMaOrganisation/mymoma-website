@@ -1,6 +1,6 @@
 const WhoWe = () => {
     return (
-        <div className="h-fit bg-bgwhite px-5 lg:px-20 xl:px-40 py-20">
+        <div className="h-fit bg-bgwhite px-5 lg:px-20 xl:px-40 py-20 mt-[-1px]">
             <div className="pb-20">
                 <h1 className="text-[47px] font-semibold pb-5">Who Are We?</h1>
                 <div className="w-[30vw] h-[3px] bg-bgpurple"></div>

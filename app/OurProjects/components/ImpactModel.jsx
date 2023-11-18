@@ -35,11 +35,11 @@ const model = [
 
 const ImpactModel = () => {
     return (
-        <div className={poppins.className + " flex flex-col justify-center items-center min-h-screen bg-bgwhite py-20 gap-16"}>
+        <div className={poppins.className + " flex flex-col justify-center items-center min-h-screen bg-bgwhite py-10 lg:py-20 gap-16"}>
             <div className="lg:w-11/12">
                 <div className="flex flex-col items-center pt-20 pb-20">
-                    <h1 className="text-[47px] font-black text-center">Our Impact Model</h1>
-                    <div className='h-[3px] w-[150px] bg-bgpurple'></div>
+                    <h1 className="lg:text-[47px] text-[40px] font-semibold text-center">Our Impact Model</h1>
+                    <div className='h-[3px] w-[50%] bg-bgpurple'></div>
                 </div>
                 <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-10">
                     <div className="flex flex-col gap-1 justify-center w-10/12 lg:w-7/12">
@@ -51,8 +51,8 @@ const ImpactModel = () => {
                                         <div style={{backgroundColor: data.color}} className={ " h-[12.5vh] w-[48px] rounded-t-[25px] rounded-b-[5px]"}></div>
                                     </div>
                                     <div className="text-black">
-                                        <h1 className="lg:text-[29px] font-semibold">{data.heading}</h1>
-                                        <p className="lg:text-[18px]">{data.content}</p>
+                                        <h1 className="lg:text-[29px] text-[18px] font-semibold">{data.heading}</h1>
+                                        <p className="lg:text-[18px] text-[15px]">{data.content}</p>
                                     </div>
                             </div>
                             )})

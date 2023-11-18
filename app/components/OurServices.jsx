@@ -51,10 +51,11 @@ const services = [
 
 const OurServices = () => {
     return (
+        <div className="bg-bgwhite mt-[-1px]">
         <div className=" h-fit bg-bgpurple rounded-t-[35px] py-20 px-5 lg:px-20 2xl:px-40 relative text-bgwhite">
             <div className="pb-20 z-10">
-                <p className="text-[18px]">Your Problems</p>
-                <h1 className="text-[47px] font-semibold pb-5">Our Services</h1>
+                <p className="lg:text-[18px] text-[15px]">Your Problems</p>
+                <h1 className="lg:text-[47px] text-[40px] font-semibold pb-5">Our Services</h1>
                 <div className="w-[30vw] h-[3px] bg-bgwhite"></div>
             </div>
             <div className="flex flex-col lg:flex-row gap-20">
@@ -63,24 +64,26 @@ const OurServices = () => {
                         <div className="items-center justify-center flex text-[47px] font-semibold w-5/12 h-full">
                             <Image alt="chart" src={chart} className="h-fit object-contain" />
                         </div>
-                        <div className="w-4/12 text-[18px]">
+                        <div className="w-4/12 text-[15px] lg:text-[18px]">
                             Only 13% of WLGBTQIA+ entrepreneurs have the access to business resources
                         </div>
                     </div>
                     <div>
-                        <p className="text-[18px]">
+                        <p className="lg:text-[18px] text-[15px]">
                         We aim to bridge this gap by providing businesses with a “makeover” i.e. <span className="font-semibold">diverse, innovative, holistic and affordable business consultancy</span> to improve their performance and implement changes that optimize their process in order to achieve success.
                         </p>
                     </div>
                 </div>
                 <div className='lg:w-7/12'>
-                <div className='flex justify-between gap-5 lg:gap-10 overflow-x-auto pr-20'>
+                <div className='flex justify-between gap-2 lg:gap-10 overflow-x-auto pr-20'>
                     {services.map((data, i)=>{
                         return (
                             <div className="p-1 bg-gradient-to-tl from-[#653A8D] to-[#ECB4FE] rounded-[20px]">
-                                <div key={i} className='text-black bg-bglightpurple p-10 flex flex-col items-center gap-10 h-full rounded-[20px]'>
-                                    <Image src={data.image} alt="service image" />
-                                    <h1 className="lg:w-[250px] w-fit text-center font-semibold md:text-[29px] text-[18px]">{data.position}</h1>
+                                <div key={i} className='text-black bg-bglightpurple p-5 lg:p-10 flex flex-col items-center gap-5 lg:gap-10 h-full rounded-[20px]'>
+                                    <div className="h-1/2">
+                                        <Image src={data.image} alt="service image" className="h-[100%] object-contain" />
+                                    </div>
+                                    <h1 className="lg:w-[250px] w-[100px] text-center font-semibold md:text-[29px] text-[15px]">{data.position}</h1>
                                 </div>
                             </div>
                             )
@@ -88,6 +91,7 @@ const OurServices = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

@@ -54,10 +54,10 @@ const Projects = () => {
     }
 
     return (
-        <div className={poppins.className + " min-h-screen flex flex-col justify-center items-center gap-10 py-40 bg-bgwhite"}>
+        <div className={poppins.className + " min-h-screen flex flex-col justify-center items-center gap-10 py-20 lg:py-40 bg-bgwhite"}>
             <div className="flex flex-col items-center pb-20">
-                <h1 className="text-[47px] font-black">Our Projects</h1>
-                <div className='h-[3px] w-[150px] bg-bgpurple'></div>
+                <h1 className="lg:text-[47px] text-[40px] font-semibold">Our Projects</h1>
+                <div className='h-[3px] w-[50%] bg-bgpurple'></div>
             </div>
             {
                project.map((data , i)=>{return(
@@ -67,18 +67,18 @@ const Projects = () => {
                             <Image src={data.logo} alt='logo' className=' rounded-tl-[50px] rounded-[7px] border-r-8 border-b-8 border-[#EDB4FE]' />
                         </div>
                         <div className='flex flex-col gap-10 lg:w-8/12'>
-                            <h1 className={states[i][0] ? 'text-[29px] text-[#653A8D] font-bold' : 'text-[29px] text-[#653A8D] font-bold'}>
+                            <h1 className={'lg:text-[29px] text-[25px] text-[#653A8D] font-bold'}>
                                 {data.name}
                             </h1>
-                            <p className={states[i][0] ? 'text-[18px]' : 'text-[18px]'}>
+                            <p className={'lg:text-[18px] text-[15px]'}>
                                 {data.description}
                             </p>
-                            <h1 className={states[i][0] ? 'text-[#7556FB] font-semibold text-[29px] hidden' : 'text-[#7556FB] font-semibold text-[29px]'}>Project Deliverables</h1>
-                            <div className={states[i][0] ? "hidden" : 'grid grid-cols-1 lg:grid-cols-2 gap-y-2 gap-x-10'}>
+                            <h1 className={states[i][0] ? 'hidden' : 'text-[#7556FB] font-semibold lg:text-[29px] text-[25px]'}>Project Deliverables</h1>
+                            <ul className={states[i][0] ? "hidden" : 'grid grid-cols-1 lg:grid-cols-2 gap-y-2 gap-x-10 list-disc px-5'}>
                                 {data.deliverables.map((deliverable , i)=>{return (
-                                    <h1 key={i} className='text-[18px]'>{deliverable}</h1>
+                                    <li key={i} className='lg:text-[18px] text-[15px]'>{deliverable}</li>
                                 )})}
-                            </div>
+                            </ul>
                             <button onClick={() => states[i][1](!states[i][0])} className='w-fit text-[#626262] italic font-light underline underline-offset-1 decoration-1 decoration-[#626262]'>{states[i][0] ? "See more" : "See less"}</button>
                         </div>
                     </div>

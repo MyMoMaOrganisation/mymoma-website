@@ -28,18 +28,18 @@ const Embrace = () => {
     return (
         <div className="min-h-[80vh] bg-bgwhite py-20 flex flex-col justify-center items-center px-5">
             <div className="flex flex-col items-center">
-                <h1 className="text-[47px] font-black text-center">Embrace Opportunities</h1>
-                <p className="text-[29px] text-center pb-5">
+                <h1 className="lg:text-[47px] text-[40px] font-semibold text-center">Embrace Opportunities</h1>
+                <p className="lg:text-[29px] text-[25px] text-center pb-5">
                     with MyMoMa
                 </p>
-                <div className='h-[3px] w-[20%] bg-bgpurple'></div>
+                <div className='h-[3px] w-[50%] bg-bgpurple'></div>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:px-20 2xl:px-80 gap-x-10 gap-y-10 pt-10'>
                 {opportunities.map((opportunity, i)=>{
                     return (
-                        <div key={i} className='flex items-center justify-center gap-10'>
+                        <div key={i} className='flex items-center justify-center gap-5 lg:gap-10'>
                             <Image src={opportunity.image} alt='image' />
-                            <p className='text-[18px]'>{opportunity.text}</p>
+                            <p className='lg:text-[18px] text-[15px]'>{opportunity.text}</p>
                         </div>
                     )
                 })}

@@ -13,7 +13,7 @@ const poppins = Poppins({weight:["100",'200','300','400','500','600','700','800'
 
 export default function Home() {
   return (
-    <div className={poppins.className + ' bg-bgwhite scroll-smooth'}>
+    <div className={poppins.className + ' bg-bgpurple scroll-smooth'}>
       <Hero />
       <WhoWe />
       <OurServices />

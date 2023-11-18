@@ -35,23 +35,23 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <div className={poppins.className + " min-h-screen bg-bgpink rounded-t-[35px] pl-5 lg:pl-10 xl:pl-40 pt-40"}>
+        <div className={poppins.className + " min-h-screen bg-bgpink rounded-t-[35px] pl-5 lg:pl-10 xl:pl-40 pt-20 lg:pt-40"}>
             <div className="pb-10">
-                <h1 className="text-[47px] font-black">What Our Clients say about Us</h1>
-                <div className='h-[3px] w-[85%] lg:w-[50%] bg-bgpurple'></div>
+                <h1 className="lg:text-[47px] text-[40px] font-semibold">What Our Clients say about Us</h1>
+                <div className='h-[3px] w-[50%] lg:w-[50%] bg-bgpurple'></div>
             </div>
             <div className='w-full'>
                 <div className='flex justify-between gap-5 lg:gap-10 overflow-x-auto pb-10 pr-20'>
                     {testimonials.map((data, i)=>{
                         return (
-                            <div key={i} className='xl:min-h-[30vw] md:min-h-[30vw] min-h-[40vw] min-w-[85vw] md:min-w-[50vw] lg:min-w-[40vw] xl:min-w-[30vw] bg-bglightpurple relative p-5 pl-10 pt-10 lg:p-20 rounded-tr-[75px] lg:rounded-tr-[150px] flex flex-col justify-between'>
+                            <div key={i} className=' min-w-[85vw] md:min-w-[50vw] lg:min-w-[40vw] xl:min-w-[30vw] bg-bglightpurple relative p-5 pl-10 pt-10 lg:p-20 rounded-tr-[75px] lg:rounded-tr-[150px] flex flex-col justify-between'>
                                 <div className='absolute top-5 left-5 w-[75px] lg:w-full'>
                                     <Image src={quotes} alt='quote' className='' />
                                 </div>
-                                <h1 className='md:text-[18px] text-[15px] pb-10 font-medium'>{data.review}</h1>
+                                <h1 className='md:text-[18px] text-[15px] pb-10'>{data.review}</h1>
                                 <div className='md:text-[18px] text-[15px]'>
-                                    <p className='font-black pb-2'>{data.name}</p>
-                                    <p className='font-bold'>{data.position}</p>
+                                    <p className='font-bold pb-2'>{data.name}</p>
+                                    <p className='font-semibold'>{data.position}</p>
                                 </div>
                             </div>
                         )
